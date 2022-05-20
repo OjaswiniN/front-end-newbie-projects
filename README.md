@@ -1,2 +1,2 @@
-# front-end-newbie-projects
+# front-end-Newbie-Projects
 
