@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* Primary */
+    --Bright-orange : hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --pragraphe: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--background-headings-buttons);
+    font-size: 15px
+}
+.main{   
+    width: 80%;
+    margin: 8rem auto ;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex: 33.33%;
+}
+.col img{
+    margin-top: 30px;
+}
+.col img ,  h2 , p {
+    padding: 20px 50px 20px 30px ;
+}
+.col h2 {
+    color: var(--background-headings-buttons);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 30px;
+}
+.col button{
+    margin: 40px 70px 40px 20px;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 30px;
+    background-color: var(--background-headings-buttons);
+    font-weight: 400;
+}
+.col p{
+    color: var(--pragraphe);
+}
+.col:nth-child(1){
+    background-color: var(--Bright-orange);
+}
+.col:nth-child(2){
+    background-color: var(--Dark-cyan);
+}
+.col:nth-child(3){
+    background-color: var(--Very-dark-cyan);
+}
+.col:nth-child(1) button{
+    color: var(--Bright-orange);
+}
+.col:nth-child(2)  button{
+    color: var(--Dark-cyan);
+}
+.col:nth-child(3)  button{
+    color: var(--Very-dark-cyan);
+}
+.col:nth-child(1) button:hover{
+    border: 2px solid var(--background-headings-buttons);
+    background-color: var(--Bright-orange);
+    color: var(--background-headings-buttons);
+}
+.col:nth-child(2)  button:hover{
+    border: 2px solid var(--background-headings-buttons);
+    background-color: var(--Dark-cyan);
+    color: var(--background-headings-buttons);
+}
+.col:nth-child(3)  button:hover{
+    border: 2px solid var(--background-headings-buttons);
+    background-color: var(--Very-dark-cyan);
+    color: var(--background-headings-buttons);
+}
